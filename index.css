@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper{
+  width: 100%;
+  margin: 0px auto;
+
+  transition: transform 0.75s;
+}
+
+.wrapper:hover{
+  transform: translateY(-20px);
+}
+
+.left-side{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background-color: black;
+  left: 30.45%;;
+  transform: skew(0deg, 20deg);
+  top: 320px;
+  border: none;
+  z-index: 1;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.right-side{
+  width: 234px;
+  height: 300px;
+  position: absolute;
+  left: 50%;
+  background-color: black;
+  transform: skew(0deg, 329deg);
+  top: 304.79px;
+  border: none;
+  z-index: 1;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.top-side{
+  width: 234px;
+  height: 109px;
+  background-color: black;
+  position: absolute;
+  transform: skew(70deg, -31deg);
+  left: 40.20%;
+  top: 196.75px;
+  border: none;
+  z-index: 1;
+  border-radius: 2px 3px 2px 0px;
+}
+
+.fl{ float: left;}
+
+.blocks{
+  width: 33.33%;
+  height: 33.33%;
+  /* background-color: aqua; */
+  border: 2.50px solid rgb(25, 25, 25);
+  border-radius: 5px;
+}
+
+.blocks-1{
+  width: 33.33%;
+  height: 33.33%;
+  /* background-color: aqua; */
+  border-top: 1px solid black;
+  border-right: 2px solid black;
+  border-bottom: 1px solid black;
+  border-left: 3px solid black;
+  border-radius: 5px;
+}
+
+.shadow{
+  /* position: absolute; */
+  /* width: 500px;
+  height: 100px; */
+  background-color: transparent;
+  border: none;
+  /* display: none; */
+  border-radius: 50%;
+  /* top: 555px;
+  left: 510px; */
+  transform: skew(283deg, 32deg);
+  z-index: -1;
+
+  transition: background 1s;
+}
+
+.wrapper:hover .shadow{
+  /* display: block; */
+  width: 500px;
+  height: 100px;
+  position: fixed;
+  top: 555px;
+  left: 510px;
+  background-color: rgba(188, 188, 188, 0.5);
+  transform: translateY(120px);
+}
+
+.bg-1{ background-color: white;}
+.bg-2{ background-color: #ffdd54;}
+.bg-3{ background-color: #508ffc;}
+.bg-4{ background-color: #DD4230;}
+.bg-5{ background-color: #1eb46e;}
+.bg-6{ background-color: #f58129;}
